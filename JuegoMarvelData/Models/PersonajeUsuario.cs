@@ -17,19 +17,11 @@ public partial class PersonajeUsuario
 
     public int? ValorHabilidad3 { get; set; }
 
-    public int? IdEquipo { get; set; }
-
-    public int? IdUsuario { get; set; }
-
     public virtual ICollection<Equipo> EquipoIdPersonajeUsuario1Navigations { get; set; } = new List<Equipo>();
 
     public virtual ICollection<Equipo> EquipoIdPersonajeUsuario2Navigations { get; set; } = new List<Equipo>();
 
     public virtual ICollection<Equipo> EquipoIdPersonajeUsuario3Navigations { get; set; } = new List<Equipo>();
 
-    public virtual Equipo? IdEquipoNavigation { get; set; }
-
     public virtual Personaje? IdPersonajeNavigation { get; set; }
-
-    public virtual Usuario? IdUsuarioNavigation { get; set; }
 }

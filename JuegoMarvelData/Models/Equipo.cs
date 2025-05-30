@@ -18,8 +18,4 @@ public partial class Equipo
     public virtual PersonajeUsuario? IdPersonajeUsuario2Navigation { get; set; }
 
     public virtual PersonajeUsuario? IdPersonajeUsuario3Navigation { get; set; }
-
-    public virtual ICollection<PersonajeUsuario> PersonajeUsuarios { get; set; } = new List<PersonajeUsuario>();
-
-    public virtual Usuario? Usuario { get; set; }
 }
